@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aportantes</title>
+    <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/218844/isolated/preview/3cfd20f6cd6e682253b9b7139c62ff5c-icono-de-trazo-de-giro-de-engranajes.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <main>
+
+    <section class="ingreso_datos">
+    <h1>Registro de aportantes</h1>
+    <form>
+
+    <div>
+    Nombre: <input id="inombre" type="text">
+    <br>
+    Especialidad: <input id="iespecialidad" type="text">
+    </div>
+
+    <div>
+    Edad: <input id="iedad" min="18" max="100" type="number">
+    <br>
+    Experiencia: <input id="iexperiencia" min="0" max="50" type="number">
+    </div>
+
+    <button type="submit" id="registrar">Registrar</button>
+
+    </form>
+    
+    </section>
+
+    <ul class="cardsList" data-list>
+        <table class="lista_aportantes_ingreso">
+            <thead>
+          
+              <tr>
+          
+                <th>Nombre</th>
+          
+                <th>Edad</th>
+          
+                <th>Especialidad</th>
+          
+                <th>Experiencia</th>
+          
+              </tr>
+          
+            </thead>
+          
+            <tbody id="cuerpotabla">
+          
+            <!--  <tr>
+          
+                <td>Anthony Javier Bueno Cabos</td>
+          
+                <td>21</td>
+          
+                <td>Estudiante</td>
+          
+                <td>5</td>
+          
+              </tr>-->
+          
+               
+          
+            </tbody>
+          
+          </table>
+          
+    </ul>
+
+    <section class="info_consulta">
+      <div class="inf_cons_main">
+        <div>
+            Edad Menor a : <input id="edadcons"   type="number">
+            <button id="btnedadcons">...</button>
+        </div>
+
+
+        <div>
+            Experiencia : <input id="expcons" type="number">
+            <button id="btnexpcons">...</button>
+        </div>
+     </div>
+
+     <div class="inf_cons_main">
+        <div>
+            Especialidad : <input id="espcons" type="text">
+            <button id="btnespcons">...</button>
+        </div>
+
+
+        <div>
+            Nombre : <input id="nomcons" type="text">
+            <button id="btnnomcons">...</button>
+        </div>
+     </div>
+    </section>
+
+    <div class="resp_consulta">
+        <ul id="cuerpo_respcons">
+         
+    
+        </ul>
+
+    </div>
+
+
+    </main>
+ <script src="index.js"></script>   
+</body>
+</html>
